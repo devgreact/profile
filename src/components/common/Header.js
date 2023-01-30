@@ -1,15 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
-/*
-  NavLink 
-  : 객체를 이용해서 포커스 스타일 적용
-  : activeStyle="CSS객체" 이라는 props 에 적용
-  : to="URI" props 는 필수
-*/
+// FontAwsome 적용
+// https://fontawesome.com/v5/docs/web/use-with/react
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const Header = () => {
+const Header = (props) => {
   const active = { color: "hotpink" };
   return (
-    <header>
+    <header className={props.type}>
       <div className="inner">
         <h1>
           <Link to="/">Logo</Link>
@@ -46,6 +44,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
+        <FontAwesomeIcon icon={faBars} className="fa-bars" />
       </div>
     </header>
   );
