@@ -1,9 +1,7 @@
-import React from 'react'
-
+import React from "react";
+import Layout from "../common/Layout";
 const Join = () => {
-  return (
-    <div>Join</div>
-  )
-}
+  return <Layout title={"Join"}>Join</Layout>;
+};
 
-export default Join
+export default Join;

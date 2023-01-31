@@ -1,9 +1,7 @@
-import React from 'react'
-
+import React from "react";
+import Layout from "../common/Layout";
 const Department = () => {
-  return (
-    <div>Department</div>
-  )
-}
+  return <Layout title={"Department"}>Department</Layout>;
+};
 
-export default Department
+export default Department;

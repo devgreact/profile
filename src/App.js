@@ -32,7 +32,7 @@ function App() {
         {/* <Header type={"sub"}/> */}
         <Route path="/" render={() => <Header type={"sub"} />} />
       </Switch>
-   
+
       <Route path="/department" component={Department} />
       <Route path="/community" component={Community} />
       <Route path="/gallery" component={Gallery} />

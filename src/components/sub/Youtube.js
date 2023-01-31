@@ -1,7 +1,7 @@
 import React from "react";
-
+import Layout from "../common/Layout";
 const Youtube = () => {
-  return <div>Youtube</div>;
+  return <Layout title={"Youtube"}>Youtube</Layout>;
 };
 
 export default Youtube;
