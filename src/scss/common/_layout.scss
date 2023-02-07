@@ -9,7 +9,7 @@
     width: 1180px;
     margin: 100px auto;
     min-height: 400px;
-    transition: 1s;
+    transition: opacity 1s, transform 1s;
     transform: translateY(100px);
     opacity: 0;
   }
