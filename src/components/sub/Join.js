@@ -40,15 +40,28 @@ const Join = () => {
     const { name } = e.target;
     // 다중으로 선택하여서 처리하는 법
     const inputs = e.target.parentElement.querySelectorAll("input");
-    inputs.forEach((item) => {
+    let data = {};
+    for (let item of inputs) {
       // 각각의 항목이 체크가 되었는지를 확인하는 용도
-      // let { name, checked } = item;
-      // console.log(name);
-      // console.log(checked);
-      // setVal({ ...val, [name]: checked });
+      let { id, checked } = item;
+      data[id] = checked;
+
+      // 1개라도 체크가 되었는지 검증
       if (item.checked) isCheck = true;
+    }
+    // setVal({ ...val, [name]: isCheck });
+    // prev state 활용34
+    setVal((prev) => {
+      const obj = { ...prev };
+      obj.hobby = data;
+      return obj;
     });
-    setVal({ ...val, [name]: isCheck });
+
+    setVal((prev) => {
+      const obj = { ...prev };
+      obj[name] = isCheck;
+      return obj;
+    });
   };
 
   // 에러 정보 관리 객체
