@@ -41,6 +41,14 @@
         background: #fff;
         .txt {
           width: 70%;
+          input,
+          textarea {
+            width: 70%;
+            border: 1px solid #bbb;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            resize: none;
+          }
         }
         .btnSet {
           display: flex;
