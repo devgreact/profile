@@ -13,6 +13,7 @@ import Gallery from "./components/sub/Gallery";
 import Youtube from "./components/sub/Youtube";
 import Location from "./components/sub/Location";
 import Join from "./components/sub/Join";
+import Schedule from "./components/sub/Schedule";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
 
       <Route path="/department" component={Department} />
       <Route path="/community" component={Community} />
+      <Route path="/schedule" component={Schedule} />
       <Route path="/gallery" component={Gallery} />
       <Route path="/youtube" component={Youtube} />
       <Route path="/location" component={Location} />

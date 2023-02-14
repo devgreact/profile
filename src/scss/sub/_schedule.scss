@@ -1,0 +1,15 @@
+.Schedule {
+  figure {
+    background: yellowgreen;
+  }
+  .react-calendar {
+    width: 100%;
+  }
+  .react-calendar__tile--now {
+    background: hotpink;
+  }
+  .react-calendar__tile--now:enabled:hover,
+  .react-calendar__tile--now:enabled:focus {
+    background: blue;
+  }
+}
