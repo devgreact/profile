@@ -48,6 +48,11 @@ const Header = (props) => {
               Join
             </NavLink>
           </li>
+          <li>
+            <NavLink activeStyle={active} to="/login">
+              Login
+            </NavLink>
+          </li>
         </ul>
         <FontAwesomeIcon icon={faBars} className="fa-bars" />
       </div>

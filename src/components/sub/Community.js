@@ -331,34 +331,16 @@ const Community = () => {
   // 차트 데이터
   const charData = [
     {
-      id: "lisp",
-      label: "lisp",
-      value: 511,
-      color: "hsl(174, 70%, 50%)",
-    },
-    {
-      id: "erlang",
-      label: "erlang",
-      value: 272,
-      color: "hsl(357, 70%, 50%)",
-    },
-    {
-      id: "c",
-      label: "c",
-      value: 160,
-      color: "hsl(154, 70%, 50%)",
-    },
-    {
       id: "ruby",
       label: "ruby",
-      value: 79,
-      color: "hsl(230, 70%, 50%)",
+      value: 70,
+      color: "hsl(236, 70%, 50%)",
     },
     {
-      id: "javascript",
-      label: "javascript",
-      value: 443,
-      color: "hsl(45, 70%, 50%)",
+      id: "ruby1",
+      label: "ruby1",
+      value: 30,
+      color: "hsl(0, 0%, 100%)",
     },
   ];
 
